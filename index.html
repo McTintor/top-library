@@ -13,7 +13,7 @@
 
     <h1 class="shrikhand-regular" style="margin: 0;">Library Project 📙</h1>
 
-    <button id="add" class="add">Add Book</button>
+    <button id="open" class="open">Add Book</button>
     
     <div class="container">
         <div class="book kode-mono">
@@ -38,6 +38,25 @@
         </div>
 
     </div>
+
+    <dialog class="modal">
+        <form id="enterBook">
+            <button type="button" class="close">&#10060;</button>
+            <h2>Enter your book details</h2>
+            <fieldset>
+                <input type="text" name="title" id="title" required maxlength="50" placeholder="Title">
+                <input type="text" name="author" id="author" required maxlength="50" placeholder="Author">
+                <input type="text" name="pages" id="pages" pattern="^[0-9]+$" required maxlength="4" placeholder="number of pages">
+                <div class="radiogroup">
+                    <label for="read">Have you read this book?</label>
+                    <br>
+                    <input type="radio" name="read" id="yes">Yes
+                    <input type="radio" name="read" id="no" checked>No
+                </div>
+            </fieldset>
+            <button type="submit" class="add" form="enterBook">Add</button>
+        </form>
+    </dialog>
 
     <script src="script.js" charset="utf-8"></script>
 </body>
