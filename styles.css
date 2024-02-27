@@ -187,3 +187,10 @@ input {
     height: 2rem;
     font-size: large;
 }
+
+#footer {
+    position: fixed; 
+    bottom: 0; 
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
