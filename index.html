@@ -16,27 +16,6 @@
     <button id="open" class="open">Add Book</button>
     
     <div class="container">
-        <!-- <div class="book kode-mono">
-            asd
-        </div>
-        <div class="book kode-mono">
-            asd
-        </div>
-        <div class="book kode-mono">
-            asd
-        </div>
-        <div class="book kode-mono">
-            <div class="info">
-                <p class="title">Title Title Title</p>
-                <p class="author">Author</p>
-                <p class="pages">Pages</p>
-            </div>
-            <div class="buttons">
-                <button id="read" class="read">Read</button>
-                <button id="delete" class="delete">Delete</button>
-            </div>
-        </div> -->
-
     </div>
 
     <dialog class="modal">
@@ -48,10 +27,10 @@
                 <input type="text" name="author" id="author" required maxlength="50" placeholder="Author">
                 <input type="text" name="pages" id="pages" pattern="^[0-9]+$" required maxlength="4" placeholder="number of pages">
                 <div class="radiogroup">
-                    <label for="read">Have you read this book?</label>
+                    <label>Have you read this book?</label>
                     <br>
-                    <input type="radio" name="read" id="yes">Yes
-                    <input type="radio" name="read" id="no" checked>No
+                    <input type="radio" name="read" id="Yes" value="Yes">Yes
+                    <input type="radio" name="read" id="No" value="No" checked>No
                 </div>
             </fieldset>
             <button type="submit" class="add" form="enterBook">Add</button>

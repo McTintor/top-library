@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,15 +107,22 @@ body {
     text-shadow: 4px 1px 21px rgba(255, 126, 61, 1);
 }
 
-.read {
+.read, .not-read {
     font-family: 'Courier New', Courier, monospace;
-    background-color: green;
     border: none;
     font-size: large;
     padding: 0.5rem 1rem;
     color: white;
     border-radius: 1rem;
     width: 6rem;
+}
+
+.read {
+    background-color: lightgreen;
+}
+
+.not-read {
+    background-color: red;
 }
 
 .delete {
@@ -189,8 +196,13 @@ input {
 }
 
 #footer {
-    position: fixed; 
+    position: relative; 
     bottom: 0; 
     margin-bottom: 1rem;
     font-size: 1.25rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
 }
